@@ -1,0 +1,100 @@
+/* Background Styling */
+#quotes1 {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+/* Quote Container */
+.quote-container {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Quote Box */
+.quote-box {
+    font-size: 1.6rem;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Author */
+#author {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3f1e25;
+}
+
+/* Button */
+button {
+    background: #ff6a88;
+    color: white;
+    font-size: 1.4rem;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff3d67;
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quote-container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .quote-box {
+        font-size: 1.4rem;
+    }
+
+    #author {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+}
